@@ -2,19 +2,19 @@
 title: incluir ficheiro
 description: incluir ficheiro
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: d1f9a07ce3d3b096b498e48b5c4f68c3454b2b37
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 426a7287458a48d1bda220ad1a5f067be2ce77d6
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079707"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460046"
 ---
 A Autenticação do Serviço de Aplicações permite um suporte de autenticação pronto a usar numa aplicação da Função do Azure. Integra-se perfeitamente com o Facebook, Twitter, Conta Microsoft, Google e Azure Active Directory. Adicionará a Autenticação do Serviço de Aplicações para proteger as APIs de back-end da sua aplicação Web.
 
