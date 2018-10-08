@@ -2,19 +2,19 @@
 title: incluir ficheiro
 description: incluir ficheiro
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 2202cdebe77668972372983a0e802d00edabf6dd
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 194a25dbf9abda80379aa5aab408ac4ffe9ab7f5
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079687"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460063"
 ---
 O Azure Cosmos DB é uma base de dados com vários modelos, sem servidor e de distribuição global da Microsoft. Neste módulo, vai aprender a utilizar as Funções do Azure para armazenar e obter os metadados de imagem como documentos JSON no Cosmos DB.
 
@@ -113,7 +113,7 @@ O enlace de saída do Cosmos DB permite-lhe criar documentos numa coleção do C
 
 ## <a name="create-a-function-to-list-images-from-cosmos-db"></a>Criar uma função para listar imagens do Cosmos DB
 
-A aplicação Web requer uma API para obter os metadados de imagem do Cosmos DB. Nos passos seguintes. Vai criar uma função acionada por HTTP que utiliza um enlace de entrada do Cosmos DB para consultar a coleção de base de dados.
+A aplicação Web requer uma API para obter os metadados de imagem do Cosmos DB. Nos passos seguintes. cria uma função acionada por HTTP que utiliza uma entrada do Cosmos DB a fazer enlace para consultar a coleção da base de dados.
 
 1. Na sua aplicação de funções, coloque o cursor sobre **Funções** no lado esquerdo e clique em **+** para criar uma nova função.
 
