@@ -6,15 +6,15 @@ author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
-ms.date: 06/21/2018
+ms.date: 10/12/2018
 ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 51c7d3e64424d499b473f3b138ce249a9cfd0182
-ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
+ms.openlocfilehash: 3779c2e130afa7ee8d5879f30a924e258b7a41e9
+ms.sourcegitcommit: fdb43556b8dcf67cb39c18e532b5fab7ac53eaee
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47460094"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49315981"
 ---
 A aplicação que está a criar é uma galeria de fotos. Esta utiliza JavaScript do lado do cliente para chamar as APIs para carregar e exibir imagens. Neste módulo, vai criar uma API com uma função sem servidor que gera um URL de tempo limitado para carregar uma imagem. A aplicação Web utiliza o URL gerado para carregar uma imagem para o armazenamento de Blobs com a [API REST do armazenamento de Blobs](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api).
 
@@ -44,12 +44,12 @@ az functionapp create -n <function app name> -g first-serverless-app -s <storage
 
 ## <a name="configure-the-function-app"></a>Configurar a aplicação de funções
 
-A aplicação de funções neste tutorial requer a versão 1.x do runtime das Funções. Definir a configuração de aplicação `FUNCTIONS_WORKER_RUNTIME` para `~1` afixa a aplicação de funções à versão 1.x mais recente. Configure as definições da aplicação com o comando [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set).
+A aplicação de funções neste tutorial requer a versão 1.x do runtime das Funções. Definir a configuração de aplicação `FUNCTIONS_EXTENSION_VERSION` para `~1` afixa a aplicação de funções à versão 1.x mais recente. Configure as definições da aplicação com o comando [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set).
 
 No seguinte comando da CLI do Azure, <app_name> é o nome da sua aplicação de funções.
 
 ```azurecli
-az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_WORKER_RUNTIME=~1
+az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
 ```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>Criar uma função sem servidor acionada por HTTP
